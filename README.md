@@ -108,34 +108,35 @@ closed)
 OpenCore loads the kernel extensions with a configured order. Unless specified, this kernel extensions are loaded for 
 macOS Sierra (10.12) up to the latest macOS Monterey (12).
 
-1. USBPorts
-2. AX88179-178A (for macOS Big Sur and later)
-3. AX88179-178A-Legacy (for macOS Catalina and earlier)
-4. Lilu
-5. ECEnabler
-6. WhateverGreen
-7. VirtualSMC
-8. SMCProcessor
-9. SMCBatteryManager
-10. SMCLightSensor
-11. SMCSuperIO
-12. AsusSMC
-13. CPUFriend
-14. CPUFriendDataProvider
-15. VoodooPS2Controller
-16. VoodooInput
-17. VoodooPS2Mouse
-18. VoodooPS2Trackpad
-19. VoodooPS2Keyboard
-20. NoTouchID (for macOS Mojave and earlier)
-21. AppleALC
-22. AirportBrcmFixup
-23. AirPortBrcmNIC_Injector
-24. BlueToolFixup (for macOS Monterey and later)
-25. BrcmFirmwareData
-26. BrcmBluetoothInjector (for macOS Catalina and later)
-27. BrcmPatchRAM2 (for macOS Mojave and earlier)
-28. BrcmPatchRAM3 (for macOS Catalina and later)
+1. USBPorts-MacBookPro11,2 (for macOS Big Sur and earlier)
+2. USBPorts-MacBookPro11,4 (for macOS Monterey and later)
+3. AX88179-178A (for macOS Big Sur and later)
+4. AX88179-178A-Legacy (for macOS Catalina and earlier)
+5. Lilu
+6. ECEnabler
+7. WhateverGreen
+8. VirtualSMC
+9. SMCProcessor
+10. SMCBatteryManager
+11. SMCLightSensor
+12. SMCSuperIO
+13. AsusSMC
+14. CPUFriend
+15. CPUFriendDataProvider
+16. VoodooPS2Controller
+17. VoodooInput
+18. VoodooPS2Mouse
+19. VoodooPS2Trackpad
+20. VoodooPS2Keyboard
+21. NoTouchID (for macOS Mojave and earlier)
+22. AppleALC
+23. AirportBrcmFixup
+24. AirPortBrcmNIC_Injector
+25. BlueToolFixup (for macOS Monterey and later)
+26. BrcmFirmwareData
+27. BrcmBluetoothInjector (for macOS Catalina and later)
+28. BrcmPatchRAM2 (for macOS Mojave and earlier)
+29. BrcmPatchRAM3 (for macOS Catalina and later)
 
 ## [OS] Other Operating Systems
 OpenCore is configured to support other operating systems as well. Tested on Windows, Ubuntu, and Fedora, all 
