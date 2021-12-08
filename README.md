@@ -137,6 +137,7 @@ macOS Sierra (10.12) up to the latest macOS Monterey (12).
 27. BrcmBluetoothInjector (for macOS Catalina and later)
 28. BrcmPatchRAM2 (for macOS Mojave and earlier)
 29. BrcmPatchRAM3 (for macOS Catalina and later)
+30. FeatureUnlock
 
 ## [OS] Other Operating Systems
 OpenCore is configured to support other operating systems as well. Tested on Windows, Ubuntu, and Fedora, all 
