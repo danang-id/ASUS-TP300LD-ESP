@@ -556,9 +556,9 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
-				<string>USBPorts-MacBookPro11,2.kext</string>
+				<string>USBMap-MBP11,2.kext</string>
 				<key>Comment</key>
-				<string>USB Ports Mapping for MacBookPro11,2</string>
+				<string>MBP11,2 USB Port Mapping</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -566,7 +566,7 @@
 				<key>MaxKernel</key>
 				<string>20.99.99</string>
 				<key>MinKernel</key>
-				<string>16.0.0</string>
+				<string>19.0.0</string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -574,17 +574,17 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
-				<string>USBPorts-MacBookPro11,4.kext</string>
+				<string>USBMapLegacy-MBP11,2.kext</string>
 				<key>Comment</key>
-				<string>USB Ports Mapping for MacBookPro11,4</string>
+				<string>MBP11,2 USB Port Mapping for Legacy OS</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
 				<string></string>
 				<key>MaxKernel</key>
-				<string>21.99.99</string>
+				<string>18.99.99</string>
 				<key>MinKernel</key>
-				<string>21.0.0</string>
+				<string>16.0.0</string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>

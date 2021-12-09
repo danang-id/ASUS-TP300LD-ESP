@@ -77,7 +77,7 @@ This OpenCore configuration only support **macOS Big Sur (11)**. The reasons are
 If support for **macOS Catalina (10.15) or earlier** is required, set the APFS minimal version and minimal date
 to the target macOS (the configuration value is available on OpenCore official documentation).
 
-If support for **macOS Monterey (12)** is required, **MacBookPro11,4** can be used as the SMBIOS instead.
+If support for **macOS Monterey (12)** is required, **MacBookPro11,4** can be used as the SMBIOS instead. Please note that a new USB Port Mapping for MacBookPro11,4 is required for macOS Monterey to work.
 
 ### Works on macOS
 - [x] QE/CI Enabled Graphics of Intel® HD Graphics 4400 
@@ -108,8 +108,8 @@ closed)
 OpenCore loads the kernel extensions with a configured order. Unless specified, this kernel extensions are loaded for 
 macOS Sierra (10.12) up to the latest macOS Monterey (12).
 
-1. USBPorts-MacBookPro11,2 (for macOS Big Sur and earlier)
-2. USBPorts-MacBookPro11,4 (for macOS Monterey and later)
+1. USBMap-MBP11,2 (for macOS Catalina and macOS Big Sur)
+2. USBMapLegacy-MBP11,2 (for macOS Mojave and earlier)
 3. AX88179-178A (for macOS Big Sur and later)
 4. AX88179-178A-Legacy (for macOS Catalina and earlier)
 5. Lilu
