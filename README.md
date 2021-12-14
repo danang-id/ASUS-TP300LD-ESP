@@ -77,8 +77,6 @@ This OpenCore configuration only support **macOS Big Sur (11)**. The reasons are
 If support for **macOS Catalina (10.15) or earlier** is required, set the APFS minimal version and minimal date
 to the target macOS (the configuration value is available on OpenCore official documentation).
 
-If support for **macOS Monterey (12)** is required, **MacBookPro11,4** can be used as the SMBIOS instead. Please note that a new USB Port Mapping for MacBookPro11,4 is required for macOS Monterey to work.
-
 ### Works on macOS
 - [x] QE/CI Enabled Graphics of Intel® HD Graphics 4400 
 - [x] Wi-Fi
@@ -108,36 +106,37 @@ closed)
 OpenCore loads the kernel extensions with a configured order. Unless specified, this kernel extensions are loaded for 
 macOS Sierra (10.12) up to the latest macOS Monterey (12).
 
-1. USBMap-MBP11,2 (for macOS Catalina and macOS Big Sur)
-2. USBMapLegacy-MBP11,2 (for macOS Mojave and earlier)
-3. AX88179-178A (for macOS Big Sur and later)
-4. AX88179-178A-Legacy (for macOS Catalina and earlier)
-5. Lilu
-6. ECEnabler
-7. WhateverGreen
-8. VirtualSMC
-9. SMCProcessor
-10. SMCBatteryManager
-11. SMCLightSensor
-12. SMCSuperIO
-13. AsusSMC
-14. CPUFriend
-15. CPUFriendDataProvider
-16. VoodooPS2Controller
-17. VoodooInput
-18. VoodooPS2Mouse
-19. VoodooPS2Trackpad
-20. VoodooPS2Keyboard
-21. NoTouchID (for macOS Mojave and earlier)
-22. AppleALC
-23. AirportBrcmFixup
-24. AirPortBrcmNIC_Injector
-25. BlueToolFixup (for macOS Monterey and later)
-26. BrcmFirmwareData
-27. BrcmBluetoothInjector (for macOS Catalina and later)
-28. BrcmPatchRAM2 (for macOS Mojave and earlier)
-29. BrcmPatchRAM3 (for macOS Catalina and later)
-30. FeatureUnlock
+1. USBMap-MBP11,4 (for macOS Monterey and later)
+2. USBMap-MBP11,2 (for macOS Catalina and macOS Big Sur)
+3. USBMapLegacy-MBP11,2 (for macOS Mojave and earlier)
+4. AX88179-178A (for macOS Big Sur and later)
+5. AX88179-178A-Legacy (for macOS Catalina and earlier)
+6. Lilu
+7. ECEnabler
+8. WhateverGreen
+9. VirtualSMC
+10. SMCProcessor
+11. SMCBatteryManager
+12. SMCLightSensor
+13. SMCSuperIO
+14. AsusSMC
+15. CPUFriend
+16. CPUFriendDataProvider
+17. VoodooPS2Controller
+18. VoodooInput
+19. VoodooPS2Mouse
+20. VoodooPS2Trackpad
+21. VoodooPS2Keyboard
+22. NoTouchID (for macOS Mojave and earlier)
+23. AppleALC
+24. AirportBrcmFixup
+25. AirPortBrcmNIC_Injector
+26. BlueToolFixup (for macOS Monterey and later)
+27. BrcmFirmwareData
+28. BrcmBluetoothInjector (for macOS Catalina and later)
+29. BrcmPatchRAM2 (for macOS Mojave and earlier)
+20. BrcmPatchRAM3 (for macOS Catalina and later)
+31. FeatureUnlock
 
 ## [OS] Other Operating Systems
 OpenCore is configured to support other operating systems as well. Tested on Windows, Ubuntu, and Fedora, all 
