@@ -139,8 +139,8 @@ macOS Sierra (10.12) up to the latest macOS Monterey (12).
 31. FeatureUnlock
 
 ## [OS] Other Operating Systems
-OpenCore is configured to support other operating systems as well. Tested on Windows, Ubuntu, and Fedora, all 
-components are working okay.
+OpenCore is configured to support other operating systems as well. Tested on Windows 10, Windows 11, Fedora 34, 
+Fedora 35, Ubuntu 20.04, Ubuntu 21.10 and Zorin OS 16, all components are working okay.
 
 ## Legal
 This repository is owned and authored by **Danang Galuh Tegar Prasetyo** - [danang-id](https://github.com/danang-id),
