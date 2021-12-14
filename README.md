@@ -106,37 +106,41 @@ closed)
 OpenCore loads the kernel extensions with a configured order. Unless specified, this kernel extensions are loaded for 
 macOS Sierra (10.12) up to the latest macOS Monterey (12).
 
-1. USBMap-MBP11,4 (for macOS Monterey and later)
-2. USBMap-MBP11,2 (for macOS Catalina and macOS Big Sur)
-3. USBMapLegacy-MBP11,2 (for macOS Mojave and earlier)
-4. AX88179-178A (for macOS Big Sur and later)
-5. AX88179-178A-Legacy (for macOS Catalina and earlier)
-6. Lilu
-7. ECEnabler
-8. WhateverGreen
-9. VirtualSMC
-10. SMCProcessor
-11. SMCBatteryManager
-12. SMCLightSensor
-13. SMCSuperIO
-14. AsusSMC
-15. CPUFriend
-16. CPUFriendDataProvider
-17. VoodooPS2Controller
-18. VoodooInput
-19. VoodooPS2Mouse
-20. VoodooPS2Trackpad
-21. VoodooPS2Keyboard
-22. NoTouchID (for macOS Mojave and earlier)
-23. AppleALC
-24. AirportBrcmFixup
-25. AirPortBrcmNIC_Injector
-26. BlueToolFixup (for macOS Monterey and later)
-27. BrcmFirmwareData
-28. BrcmBluetoothInjector (for macOS Catalina and later)
-29. BrcmPatchRAM2 (for macOS Mojave and earlier)
-20. BrcmPatchRAM3 (for macOS Catalina and later)
-31. FeatureUnlock
+1. USBMap-MBP11,4 (for macOS Catalina and later)
+2. USBMapLegacy-MBP11,4 (for macOS Mojave and earlier)
+3. USBMap-MBP11,2 (for macOS Catalina and macOS Big Sur, **disabled** in favor of USBMap-MBP11,4)
+4. USBMapLegacy-MBP11,2 (for macOS Mojave and earlier, **disabled** in favor of USBMapLegacy-MBP11,4)
+5. AX88179-178A (for macOS Big Sur and later)
+6. AX88179-178A-Legacy (for macOS Catalina and earlier)
+7. Lilu
+8. ECEnabler
+9. WhateverGreen
+10. VirtualSMC
+11. SMCProcessor
+12. SMCBatteryManager
+13. SMCLightSensor
+14. SMCSuperIO
+15. AsusSMC
+16. CPUFriend
+17. CPUFriendDataProvider
+18. VoodooPS2Controller
+19. VoodooInput
+20. VoodooPS2Mouse
+21. VoodooPS2Trackpad
+22. VoodooPS2Keyboard
+23. NoTouchID (for macOS Mojave and earlier)
+24. AppleALC
+25. AirportBrcmFixup
+26. AirPortBrcmNIC_Injector
+27. BlueToolFixup (for macOS Monterey and later)
+28. BrcmFirmwareData
+29. BrcmBluetoothInjector (for macOS Catalina and later)
+30. BrcmPatchRAM2 (for macOS Mojave and earlier)
+31. BrcmPatchRAM3 (for macOS Catalina and later)
+32. FeatureUnlock
+
+**Note**: if **MacBookPro11,2** SMBIOS is used, enable USBMap-MBP11,2 or USBMapLegacy-MBP11,2 instead (and disable 
+USBMap-MBP11,4 and USBMapLegacy-MBP11,4).
 
 ## [OS] Other Operating Systems
 OpenCore is configured to support other operating systems as well. Tested on Windows 10, Windows 11, Fedora 34, 
