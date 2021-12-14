@@ -50,7 +50,7 @@ version&mdash; are **not guaranteed** to work as well as describe here.
 - **BIOS Version**: TP300LD.300 (released 25 June 2019)
 
 ## OpenCore Information
-This ESP contains [OpenCore](https://github.com/acidanthera/OpenCorePkg) version 0.7.5. The boot mode used 
+This ESP contains [OpenCore](https://github.com/acidanthera/OpenCorePkg) version 0.7.6. The boot mode used 
 is **UEFI** with **CSM disabled** on **GUID Partition Table (GPT)** storage scheme.
 
 ### UEFI Drivers Used 
