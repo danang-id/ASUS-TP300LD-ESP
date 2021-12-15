@@ -556,9 +556,9 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
-				<string>USBMap-MBP11,4.kext</string>
+				<string>USBMap.kext</string>
 				<key>Comment</key>
-				<string>MBP11,4 USB Port Mapping</string>
+				<string>USB Port Mapping</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -574,9 +574,9 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
-				<string>USBMapLegacy-MBP11,4.kext</string>
+				<string>USBMapLegacy.kext</string>
 				<key>Comment</key>
-				<string>MBP11,4 USB Port Mapping for Legacy OS</string>
+				<string>USB Port Mapping for Legacy OS</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -592,9 +592,9 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
-				<string>USBMap-MBP11,2.kext</string>
+				<string>USBMap-MBP112.kext</string>
 				<key>Comment</key>
-				<string>MBP11,2 USB Port Mapping</string>
+				<string>USB Port Mapping (MBP11,2 SMBIOS)</string>
 				<key>Enabled</key>
 				<false/>
 				<key>ExecutablePath</key>
@@ -610,9 +610,9 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
-				<string>USBMapLegacy-MBP11,2.kext</string>
+				<string>USBMapLegacy-MBP112.kext</string>
 				<key>Comment</key>
-				<string>MBP11,2 USB Port Mapping for Legacy OS</string>
+				<string>USB Port Mapping for Legacy OS (MBP11,2 SMBIOS)</string>
 				<key>Enabled</key>
 				<false/>
 				<key>ExecutablePath</key>
