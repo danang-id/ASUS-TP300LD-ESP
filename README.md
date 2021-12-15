@@ -69,13 +69,13 @@ These are the UEFI drivers used by OpenCore.
 This ESP contains OpenCore configured to run the following macOS, including what are works and what are not works.
 
 ### SMBIOS and Supported macOS
-This OpenCore configuration only support **macOS Big Sur (11)**. The reasons are:
+This OpenCore configuration support **macOS Big Sur (11.4) and later** (limited by APFS minimal version and minimal date).
 
-- APFS minimal version and minimal date are configured to support **at least macOS Big Sur and later**; and
-- **MacBookPro11,2** is used as the SMBIOS, which support **only up to macOS Big Sur**.
+**MacBookPro11,4** is used as the SMBIOS of this configuration. Limited by SMBIOS and this configuration, however, 
+the possible macOS version supported ranges from macOS Siera (10.12) up to the current macOS Monterey (12).
 
-If support for **macOS Catalina (10.15) or earlier** is required, set the APFS minimal version and minimal date
-to the target macOS (the configuration value is available on OpenCore official documentation).
+If support for **macOS Catalina (10.15) and earlier** is required, set the APFS minimal version and minimal date
+to the target macOS (the configuration value can be found on [OcApfsLib](https://github.com/acidanthera/OpenCorePkg/blob/master/Include/Acidanthera/Library/OcApfsLib.h)).
 
 ### Works on macOS
 - [x] QE/CI Enabled Graphics of Intel® HD Graphics 4400 
@@ -106,10 +106,10 @@ closed)
 OpenCore loads the kernel extensions with a configured order. Unless specified, this kernel extensions are loaded for 
 macOS Sierra (10.12) up to the latest macOS Monterey (12).
 
-1. USBMap-MBP11,4 (for macOS Catalina and later)
-2. USBMapLegacy-MBP11,4 (for macOS Mojave and earlier)
-3. USBMap-MBP11,2 (for macOS Catalina and macOS Big Sur, **disabled** in favor of USBMap-MBP11,4)
-4. USBMapLegacy-MBP11,2 (for macOS Mojave and earlier, **disabled** in favor of USBMapLegacy-MBP11,4)
+1. USBMap (for macOS Catalina and later)
+2. USBMapLegacy (for macOS Mojave and earlier)
+3. USBMap-MBP112 (for macOS Catalina and macOS Big Sur, **disabled** in favor of USBMap)
+4. USBMapLegacy-MBP112 (for macOS Mojave and earlier, **disabled** in favor of USBMapLegacy)
 5. AX88179-178A (for macOS Big Sur and later)
 6. AX88179-178A-Legacy (for macOS Catalina and earlier)
 7. Lilu
@@ -139,8 +139,8 @@ macOS Sierra (10.12) up to the latest macOS Monterey (12).
 31. BrcmPatchRAM3 (for macOS Catalina and later)
 32. FeatureUnlock
 
-**Note**: if **MacBookPro11,2** SMBIOS is used, enable USBMap-MBP11,2 or USBMapLegacy-MBP11,2 instead (and disable 
-USBMap-MBP11,4 and USBMapLegacy-MBP11,4).
+**Note**: if **MacBookPro11,2** SMBIOS is used, enable USBMap-MBP112 and USBMapLegacy-MBP112 instead (and disable 
+USBMap and USBMapLegacy).
 
 ## [OS] Other Operating Systems
 OpenCore is configured to support other operating systems as well. Tested on Windows 10, Windows 11, Fedora 34, 
