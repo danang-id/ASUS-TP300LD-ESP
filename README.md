@@ -1,3 +1,9 @@
+> [!NOTE]  
+> This ESP contains older version of OpenCore, your mileage may vary.
+
+> [!WARNING]  
+> This repository is achieved because the device I used for this project is no longer available.
+
 # ASUS TP300LD EFI System Partition (ESP)
 
 This repository contains files and folder inside the EFI System Partition (ESP) on my ASUS TP300LD notebook. 
